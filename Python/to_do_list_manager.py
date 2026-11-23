@@ -11,6 +11,9 @@ while True:
     except ValueError:
         print("Invalid input! Please enter a number between 1 and 5.")
         continue
+    if choice<=0 or choice>5:
+        print("Please choose from 1 to 5.")
+        continue
     if choice == 1:
         task = input("Enter the task: ")
         if task.strip():
